@@ -62,6 +62,14 @@
         cursor: pointer;
       }
 
+      .btn:hover {
+        background-color: #087f5b;
+      }
+
+      .btn:hover .btn-icon {
+        stroke: #fff;
+      }
+
       .btn-icon {
         width: 24px;
         height: 24px;
@@ -72,14 +80,20 @@
         font-size: 18px;
         text-decoration: none;
         color: #343a40;
-        background-color: red;
+
         height: 36px;
         width: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       .page:hover,
-      .page:active {
+      .page:active,
+      .page.page--current {
         background-color: #087f5b;
+        color: #fff;
       }
     </style>
     <title>Document</title>
@@ -105,7 +119,7 @@
         </button>
         <a class="page" href="">1</a>
         <a class="page" href="">2</a>
-        <a class="page" href="">3</a>
+        <a class="page page--current" href="">3</a>
         <a class="page" href="">4</a>
         <a class="page" href="">5</a>
         <a class="page" href="">6</a>
